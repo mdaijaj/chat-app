@@ -74,15 +74,6 @@ socket.on('message', (msg) => {
     scrollToBottom()
 })
 
-
-
-// //user jonted
-// socket.on('user_jointed', (name)=>{
-//     append(`${name} jointed group`, 'incoming')
-//     join_user.play();
-// })
-
-
 // left chat
 socket.on('left',(message)=>{
     append(`${message} left the chat`, 'incoming')
