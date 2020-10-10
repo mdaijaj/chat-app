@@ -75,9 +75,17 @@ socket.on('message', (msg) => {
 })
 
 
+
+// //user jonted
+// socket.on('user_jointed', (name)=>{
+//     append(`${name} jointed group`, 'incoming')
+//     join_user.play();
+// })
+
+
 // left chat
-socket.on('left',(user)=>{
-    append(`${name} left the chat`, 'incoming')
+socket.on('left',(message)=>{
+    append(`${message} left the chat`, 'incoming')
 })
 
 //for scroll bar extend mesage

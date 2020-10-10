@@ -33,15 +33,14 @@ io.on('connection', (socket) => {
     socket.on('message', (name) => {
         console.log("api is working here.....")
         console.log("new user", name)
-        users[socket.id]=name
+        // users[socket.id]=name
         socket.broadcast.emit('message', name)
     })
 
     //disconnect to users
-    socket.on('disconnect', (message, name) => {
+    socket.on('disconnect', (message) => {
         console.log("users detail:-",users[socket.id])
-        // console.log("new_mesasge:-",  message)
-        socket.broadcast.emit('left', users[socket.id]=name);
+        socket.broadcast.emit('left', users[socket.id]);
         delete users[socket.id]
     })
 })
