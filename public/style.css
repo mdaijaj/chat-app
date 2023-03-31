@@ -24,7 +24,7 @@ section.chat__section {
     background: green;
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 .brand h1 {
     text-transform: uppercase;
@@ -40,7 +40,6 @@ section.chat__section {
     overflow-y: auto;
     padding-top: 40px;
     background: rgb(127, 140, 141 );
-    border-radius: 20px;
 
 }
 textarea {
@@ -86,7 +85,7 @@ textarea {
 }
 
 .text_area{
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
 }
 .img_logo{
     border-radius: 80px;
